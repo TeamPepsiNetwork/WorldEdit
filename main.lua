@@ -57,7 +57,7 @@ function Initialize(a_Plugin)
 	--Bind all the commands:
 	RegisterPluginInfoCommands();
 
-	if (g_Config.Updates.CheckForUpdates) then
+	if (false and g_Config.Updates.CheckForUpdates) then
 		cUpdater:CheckForNewerVersion()
 	end
 

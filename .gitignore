@@ -1,5 +1,6 @@
 *.deuser
 Config.cfg
+config.cfg
 @EnableMobDebug.lua
 Storage/storage.sqlite
 Storage/Backups/*.sqlite
