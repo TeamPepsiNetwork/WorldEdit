@@ -681,6 +681,7 @@ g_PluginInfo =
 			{
 				none =
 				{
+					Permission = "worledit.tool.none",
 					HelpString = "Unbind a bound tool from your current item",
 					Handler = HandleNoneCommand,
 					Category = "Tool",
@@ -753,14 +754,14 @@ g_PluginInfo =
 				cui =
 				{
 					HelpString = "Complete CUI handshake",
-					Permission = "",
+					Permission = "worledit.cui",
 					Handler = HandleWorldEditCuiCommand,
 					Category = "Special",
 				},
 				version =
 				{
 					HelpString = "Sends the plugin version to the player",
-					Permission = "",
+					Permission = "worledit.version",
 					Handler = HandleWorldEditVersionCommand,
 					Alias = "ver",
 					Category = "Special",
