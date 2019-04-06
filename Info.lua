@@ -333,7 +333,7 @@ g_PluginInfo =
 		["//schematic"] =
 		{
 			Alias = "//schem",
-			Permission = "",  -- Multi-commands shouldn't specify a permission
+			Permission = "worledit.schematic",  -- Multi-commands shouldn't specify a permission
 			Handler = nil,  -- Provide a standard multi-command handler
 			HelpString = "",  -- Don't show in help
 			Category = "Schematic",
@@ -521,7 +521,7 @@ g_PluginInfo =
 		["/brush"] =
 		{
 			Alias = { "//brush", "/br", "//br", },
-			Permission = "",
+			Permission = "worledit.brush.base",
 			Handler = nil,
 			HelpString = "Brush commands",
 			Category = "Brush",
@@ -607,6 +607,7 @@ g_PluginInfo =
 		["/none"] =
 		{
 			Handler = HandleNoneCommand,
+			Permission = "worldedit.brush.options.none",
 			HelpString = "Unbind a bound tool from your current item",
 			Category = "Tool",
 		},
@@ -672,7 +673,7 @@ g_PluginInfo =
 
 		["/tool"] =
 		{
-			Permission = "",
+			Permission = "worledit.tool.base",
 			Handler = nil,
 			HelpString = "Select a tool to bind",
 			Category = "Tool",
@@ -743,7 +744,7 @@ g_PluginInfo =
 		["/we"] =
 		{
 			Alias = "/worldedit",
-			Permission = "",
+			Permission = "worldedit.base",
 			Handler = nil,
 			HelpString = "WorldEdit command",
 			Category = "Special",
